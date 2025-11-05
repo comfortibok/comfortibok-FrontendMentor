@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+  <title>Frontend Mentor | Blog Preview Card</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600;800&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --yellow: hsl(47, 88%, 63%);
+      --black: hsl(0, 0%, 7%);
+      --gray: hsl(0, 0%, 42%);
+      --white: hsl(0, 0%, 100%);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      display: grid;
+      place-items: center;
+      min-height: 100vh;
+      font-family: "Figtree", sans-serif;
+      font-weight: 400;
+      background-color: var(--yellow);
+      color: var(--black);
+      line-height: 1.5;
+    }
+
+    main {
+      border: 4px solid red;
+      width: 90%;
+    }
+
+    /* Blog Card */
+    .blog-card {
+      max-width: 370px;
+      margin: 0 auto;
+      padding: 1.5rem;
+      background-color: var(--white);
+      border: 1px solid var(--black);
+      border-radius: 20px;
+      box-shadow: 8px 8px 0 var(--black);
+    }
+
+    /* Image */
+    .post-image {
+      width: 100%;
+      display: block;
+      border-radius: 10px;
+      margin-bottom: 1.25rem;
+    }
+
+    .profile-img {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+    }
+
+    /* Typography */
+    h1,
+    h2,
+    .name {
+      font-weight: 800;
+    }
+
+    h2,
+    .date {
+      font-size: 0.85rem;
+    }
+
+    h1 {
+      font-size: 1.25rem;
+      margin-bottom: 0.75rem;
+    }
+
+    h2 {
+      background-color: var(--yellow);
+      display: inline-block;
+      padding: 0.3rem 0.75rem;
+      border-radius: 5px;
+      margin-bottom: 0.75rem;
+    }
+
+    p {
+      color: var(--gray);
+      font-size: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .date {
+      margin-bottom: 0.75rem;
+      display: block;
+    }
+
+    .name {
+      font-size: 0.9rem;
+    }
+
+    .profile-section {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    footer.attribution {
+      text-align: center;
+      margin-top: 2rem;
+      font-size: 0.8rem;
+    }
+
+    footer a {
+      color: hsl(228, 45%, 44%);
+      text-decoration: none;
+    }
+
+    footer a:hover,
+    footer a:focus {
+      text-decoration: underline;
+      outline: none;
+    }
+
+    @media (max-width: 500px) {
+      .blog-card {
+        padding: 1.25rem;
+        border-radius: 15px;
+      }
+
+      h2,
+      .date {
+        font-size: 0.75rem;
+      }
+
+      h1 {
+        font-size: 1.1rem;
+      }
+
+      p {
+        font-size: 0.95rem;
+      }
+
+      .name {
+        font-size: 0.8rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <article class="blog-card" role="article" aria-labelledby="post-title">
+      <img class="post-image" src="assets/images/illustration-article.svg"
+        alt="Illustration of HTML and CSS concepts" />
+
+      <h2>Learning</h2>
+      <span class="date" aria-label="Published on December 21st, 2023">Published 21 Dec 2023</span>
+
+      <h1>HTML &amp; CSS foundations </h1>
+
+      <p>
+        These languages are the backbone of every website, defining
+        structure, content, and presentation.
+      </p>
+
+      <section class="profile-section" aria-label="Author profile">
+        <img class="profile-img" src="assets/images/image-avatar.webp" alt="Profile picture of Greg Hooper" />
+        <strong class="name">Greg Hooper</strong>
+      </section>
+    </article>
+
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener noreferrer">Frontend
+        Mentor</a>.
+      Coded by
+      <a href="mailto:ibokcomfort93@gmail.com" aria-label="Send email to Ibok Comfort M">Ibok Comfort M</a>.
+    </footer>
+  </main>
+</body>
+
+</html>

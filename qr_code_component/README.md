@@ -12,7 +12,7 @@ This screenshot shows my completed QR code component, designed to be responsive 
 
 ### Links
 
-- Live Site URL:
+- Solution URL:  https://www.frontendmentor.io/solutions/css-flex-hVP7rtn0-Y
 - Design Source: [Frontend Mentor](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H)
 
 ### Tools Used
