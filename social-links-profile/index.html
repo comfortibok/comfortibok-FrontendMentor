@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Social links profile</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Inter", sans-serif;
+      background-color: hsl(0, 0%, 8%);
+      color: hsl(0, 0%, 100%);
+      display: grid;
+      place-items: center;
+      min-height: 100vh;
+      line-height: 1.5;
+    }
+
+    .attribution,
+    .social-link-card {
+      text-align: center;
+    }
+
+    /* CARD WRAPPER */
+    .app-wrap {
+      width: 90%;
+      max-width: 350px;
+    }
+
+    .social-link-card {
+      background-color: hsl(0, 0%, 12%);
+      padding: 2.5em 2em;
+      border-radius: 12px;
+    }
+
+    /* PROFILE IMAGE */
+    .img-wrap {
+      margin-bottom: 1.5em;
+    }
+
+    img {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    /* TEXT */
+    h1 {
+      font-size: 1.6rem;
+      font-weight: 700;
+      margin-bottom: 0.3em;
+    }
+
+    p {
+      color: hsl(75, 94%, 57%);
+      margin-bottom: 1.2em;
+    }
+
+    q {
+      color: hsl(0, 0%, 80%);
+      font-size: 0.95rem;
+    }
+
+    p,
+    .link {
+      font-weight: 600;
+    }
+
+    /* LINK */
+    .link-list {
+      list-style: none;
+      margin-top: 1.8em;
+      display: flex;
+      flex-direction: column;
+      gap: 0.9em;
+    }
+
+    .link-list li {
+      background-color: hsl(0, 0%, 20%);
+      border-radius: 8px;
+      transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
+    }
+
+    .link {
+      color: inherit;
+      text-decoration: none;
+      display: block;
+      padding: 0.8em;
+    }
+
+    .link-list li:hover,
+    .link-list li:focus {
+      background-color: hsl(75, 94%, 57%);
+    }
+
+    .link-list li:hover a,
+    .link-list li:focus a {
+      color: hsl(0, 0%, 8%);
+    }
+
+    /* FOOTER */
+    .attribution {
+      margin-top: 2em;
+      font-size: 11px;
+      color: hsl(0, 0%, 70%);
+    }
+
+    .attribution a {
+      color: hsl(75, 94%, 57%);
+      text-decoration: none;
+      transform: all 0.25s ease;
+    }
+
+    .attribution a:hover,
+    .attribution a:focus {
+      border-bottom: 2px solid hsl(75, 94%, 57%);
+    }
+
+    @media (max-width: 375px) {
+      .social-link-card {
+        padding: 2em 1.5em;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="app-wrap">
+    <section class="social-link-card" role="region" aria-labelledby="profile-heading">
+      <div class="img-wrap">
+        <img src="assets/images/avatar-jessica.jpeg" alt="">
+      </div>
+
+      <h1 id="profile-heading">Jessica Randall</h1>
+      <p>London, United Kingdom</p>
+      <q>Front-end developer and avid reader.</q>
+
+      <ul class="link-list" aria-label="Social media profiles">
+        <li><a class="link" href="#" aria-label="Visit Jessica's GitHub profile">GitHub</a></li>
+        <li><a class="link" href="#" aria-label="Visit Jessica's Frontend Mentor profile">Frontend Mentor</a></li>
+        <li><a class="link" href="#" aria-label="Visit Jessica's LinkedIn profile">LinkedIn</a></li>
+        <li><a class="link" href="#" aria-label="Visit Jessica's Twitter profile">Twitter</a></li>
+        <li><a class="link" href="#" aria-label="Visit Jessica's Instagram profile">Instagram</a></li>
+      </ul>
+    </section>
+    <footer class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="mailto:ibokcomfort93@gmail.com" target="_blank"
+        aria-label="Send an email to Ibok Comfort M">Ibok
+        Comfort M</a>.
+    </footer>
+
+  </main>
+</body>
+
+</html>
